@@ -1,0 +1,135 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap'); /* Represents hip hop, trap, and gangsta */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); /* Represents elegance */
+
+/* Color Palette */
+:root {
+  --primary-color: #ff6f00; /* Orange */
+  --secondary-color: #1a1a1a; /* Black */
+  --background-color: #f5f5f5; /* Light Gray */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Scrolling Animations */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Visually Striking Images */
+.merchandise {
+  background-image: url('merchandise-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 40px;
+}
+
+.merchandise h2 {
+  margin-bottom: 20px;
+}
+
+/* Additional Styles */
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media li {
+  margin-bottom: 5px;
+}
+
+.social-media a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+/* Video Styles */
+.release-item {
+  margin-bottom: 20px;
+}
+
+.release-video {
+  width: 100%;
+  height: 315px;
+  margin-bottom: 10px;
+}
+
+/* Tour Dates Styles */
+.tour-dates {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tour-dates h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.tour-item {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tour-item:hover {
+  transform: scale(1.05);
+}
+
+.tour-item h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.tour-item p {
+  color: #fff;
+}
